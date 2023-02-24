@@ -54,7 +54,7 @@ Check the code here:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Result Summary Component](https://result-summary-comp-main.netlify.app)
 
 ## My process
 
