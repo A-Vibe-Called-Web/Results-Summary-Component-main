@@ -1,0 +1,284 @@
+
+:root{
+    /* Color */
+    --primary-c-red: hsl(0, 100%, 67%);
+    --primary-c-yellow: hsl(39, 100%, 56%);
+    --primary-c-green: hsl(166, 100%, 37%);
+    --primary-c-blue: hsl(234, 85%, 45%);
+
+    --primary-c-red-a: hsl(0, 100%, 67%, .1);
+    --primary-c-yellow-a: hsl(39, 100%, 56%, .1);
+    --primary-c-green-a: hsl(166, 100%, 37%, .1);
+    --primary-c-blue-a: hsl(234, 85%, 45%, .1);
+
+    /* Gradients */
+    --gradient-b-slateblue: hsl(252, 100%, 67%);
+    --gradient-b-royalblue: hsl(241, 81%, 54%);
+    --gradient-b-violetblue: hsla(256, 72%, 46%, 1);
+    --gradient-b-persianblue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white-n-100: hsl(0, 0%, 100%);
+    --white-n-100-a1: hsl(0, 0%, 100%, 0.6);
+    --white-n-100-a2: hsl(0, 0%, 100%, 0.4);
+    --paleblue-n-200: hsl(221, 100%, 96%);
+    --lightlavender-300: hsl(241, 100%, 89%);
+    --darkgrayblue-n-800: hsl(224, 30%, 27%);
+    --darkgrayblue-n-800-a1: hsl(224, 30%, 27%, 0.6);
+
+    /* Font */
+    --ff-base: 'Hanken Grotesk', sans-serif;
+
+    /* Font Weight */
+    --fw-reg: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+ 
+  body{
+    font-family: var(--ff-base);
+    font-weight: var(--fw-reg);
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+  }
+  /* Utilities*/
+  .flex-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(var(--gradient-b-violetblue), var(--gradient-b-persianblue));
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .flex-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: .9rem;
+    border-radius: 10px;
+  }
+
+  .flex__container{
+    display: flex;
+    align-items: center;
+  }
+
+  .summary__text_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* title */
+  .title{
+    font-size: 1.3rem;
+}
+
+/* button */
+    button{
+        cursor: pointer;
+        border: 0;
+        border-radius: 50px;
+        text-decoration: none;
+        padding: 0.7rem 1rem ;
+        margin-top: .5rem;
+
+        font-size: 1.4rem;
+        font-weight: var(--fw-bold);
+        background: var(--darkgrayblue-n-800);
+        color: var(--white-n-100);
+    }
+
+    button:is(:hover, :focus){
+      background: linear-gradient(to bottom,var(--gradient-b-slateblue),var(--gradient-b-royalblue));
+    } 
+    .container{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+  .summary__content{
+    --content-padding: 2rem;
+    --content-spacing: 1.5rem;
+
+    text-align: center;
+    display: grid;
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+    background: linear-gradient(to bottom,var(--gradient-b-slateblue),var(--gradient-b-royalblue));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    max-width: 550px;
+  }
+
+  .summary__content .title{
+    color: var(--white-n-100-a1);
+  }
+
+  .summary__score{
+    font-size: 3rem;
+    font-weight: var(--fw-black);
+    color: var(--white-n-100);
+  }
+
+  .flex-group  p{
+    font-size: 1.1rem;
+    font-weight: var(--fw-bold);
+    color: var(--white-n-100-a2);
+  }
+
+  .subtitle{
+    font-size: 2rem;
+    color: var(--white-n-100);
+  }
+  
+  .summary__content > p{
+    font-size: 1.1rem;
+    font-weight: var(--fw-bold);
+    color: var(--white-n-100-a1);
+    margin-bottom: .5rem;
+    margin-top: -.5rem;
+    
+  }
+
+  .result__content{
+    --content-padding: 2rem;
+    --content-spacing: 1rem;
+
+    display: grid;
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+    width: 100%;
+  }
+
+  .result__content .title{
+    color: var(--darkgrayblue-n-800);
+  }
+
+  .flex-wrap.bg-red{
+    background-color: var(--primary-c-red-a);
+  }
+  .flex-wrap.bg-yellow{
+    background-color: var(--primary-c-yellow-a);
+  }
+  .flex-wrap.bg-green{
+    background-color: var(--primary-c-green-a);
+  }
+  .flex-wrap.bg-blue{
+    background-color: var(--primary-c-blue-a);
+  }
+
+  .flex__container.reaction p.summary__title{
+    color: var(--primary-c-red);
+    font-weight: var(--fw-bold);
+  }
+  .flex__container.memory p.summary__title{
+    color: var(--primary-c-yellow);
+    font-weight: var(--fw-bold);
+  }
+  .flex__container.verbal p.summary__title{
+    color: var(--primary-c-green);
+    font-weight: var(--fw-bold);
+  }
+  .flex__container.visual p.summary__title{
+    color: var(--primary-c-blue);
+    font-weight: var(--fw-bold);
+  }
+
+  .flex__container .icon{
+    margin-right: 1rem;
+  }
+
+  .summary__text_wrap .res{
+    color: var(--darkgrayblue-n-800);
+    font-weight: var(--fw-bold);
+    padding-right: .5rem;
+  }
+
+  .summary__text_wrap p:last-child{
+    font-weight: bold;
+    color: var(--darkgrayblue-n-800-a1);
+  }
+
+  @media (min-width: 700px) {
+    body{
+        display: grid;
+        place-content: center;
+        margin: 1rem;
+    }
+    
+    .container{
+        flex-direction: row;
+        box-shadow: 0px 5px 20px hsl(241, 81%, 54%, 0.3);
+        border-radius: 30px;
+    }
+
+    .summary__content{
+    border-radius: 30px;
+   
+
+    }
+
+    .result__content{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    }
+   
+} 
