@@ -42,7 +42,7 @@ Desktop View - version 1<br>
 
 Mobile View - version 1<br>
 <a>
-  <image src="/assets/images/Mobile-img.png" width="600" height="400">
+  <image src="/assets/images/Mobile-img.png" width="600" height="600">
 </a>
 
 Check the code here:
