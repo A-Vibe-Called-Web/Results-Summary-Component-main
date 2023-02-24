@@ -42,7 +42,7 @@ Desktop View - version 1<br>
 
 Mobile View - version 1<br>
 <a>
-  <image src="/assets/images/Mobile-img.png" width="600" height="800">
+  <image src="/assets/images/Mobile-img.png" width="300" height="600">
 </a>
 
 Check the code here:
@@ -54,7 +54,7 @@ Check the code here:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Result Summary Component](https://result-summary-comp-main.netlify.app)
 
 ## My process
 
